@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link href="{{ url_for('static', filename='styleroulette.css') }}" rel="stylesheet">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/lightbox.min.css">
+    <script>
+        function getDefi() {
+            fetch("/get_defi")  // Appelle le serveur Flask
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("defi").innerText = data.defi;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Roulette de Défis</h1>
+    <button onclick="getDefi()">Obtenir un défi</button>
+    <p id="defi"></p> 
+		<div class="image_container">
+			<div class="gallery">
+				<a href="static/assets/export 4-5.jpg" data-lightbox="models">
+					<img  src="static/assets/export 4-5.jpg"loading="lazy" /></a>
+				<a href="static/assets/export 10-2.jpg" data-lightbox="models">
+					<img  src="static/assets/export 10-2.jpg"loading="lazy"/></a>
+				<a href="static/assets/_DSC7567-2.jpg" data-lightbox="models">
+					<img  src="static/assets/_DSC7567-2.jpg" loading="lazy"/></a>
+				<a href="static/assets/export 1-4.jpg" data-lightbox="models">
+					<img  src="static/assets/export 1-4.jpg"loading="lazy"/></a>
+				<a href="static/assets/ICELAND.jpg" data-lightbox="models">
+					<img  src="static/assets/ICELAND.jpg"loading="lazy"/></a>
+				<a href="static/assets/fond_index2.jpg" data-lightbox="models">
+					<img  src="static/assets/fond_index2.jpg"loading="lazy"/></a>
+				<a href="static/assets/night.jpg" data-lightbox="models">
+					<img  src="static/assets/night.jpg"loading="lazy"/></a>
+			</div>
+		</div>
+		<script src="static/lightbox-plus-jquery.min.js"></script>	
+</body>
+</html>

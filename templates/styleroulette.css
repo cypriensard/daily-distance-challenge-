@@ -1,0 +1,28 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'tahuregular';
+    src: url('font/tahu-webfont.woff2') format('woff2'),
+         url('font/tahu-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'wintersoulregular';
+    src: url('font/wintersoul-webfont.woff2') format('woff2'),
+         url('font/wintersoul-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+
