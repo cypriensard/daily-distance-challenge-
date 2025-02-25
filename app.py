@@ -4,7 +4,7 @@ import random
 app = Flask(__name__)
 
 # Liste des défis
-defis = ["Se lever pour admirer le lever du soleil", "Cuisiner un gâteau", "Faire un selfie avec un prof"]
+defis = ["Se lever pour admirer le lever du soleil", "Cuisiner un gâteau", "prendre une photo avec un animal","tester un dessert","se poser 30 mins au parc","aller dans un café devant lequel on passe tous les jours","renter dans une librairie ou bibliothèque","dessiner un objet de notre environnement en 5 mins","s'arrêter à une station de métro avant sa destination pour marcher",'manger une spécialité',"manger un street food","ecrire une carte postale","cuisiner un vrai ptit dej !"," méditer 5 mins"," ouvrir son livre", "nettoye une partie de ta maison paumé"," change un élément de place de chez toi","faire un max pompe"," faire un hand stand","fais un voeux","apprend une nouvelle passe de rock"]
 
 @app.route("/")
 def index():
