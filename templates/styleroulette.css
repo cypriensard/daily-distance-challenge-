@@ -1,28 +1,79 @@
 
-html {
-  scroll-behavior: smooth;
-}
-
-@font-face {
-    font-family: 'tahuregular';
-    src: url('font/tahu-webfont.woff2') format('woff2'),
-         url('font/tahu-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'wintersoulregular';
-    src: url('font/wintersoul-webfont.woff2') format('woff2'),
-         url('font/wintersoul-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 body {
-  margin: 0;
-  background-color: white;
-  overflow-x: hidden;
+    text-align: center;
+    background-color: #f4f4f4;
+    background-image: url('assets/texture.jpeg');
+    background-size: cover;         /* L'image couvre tout le body */
+    background-repeat: no-repeat;   /* Pas de répétition de l'image */
+    background-position: center; 
 }
 
+/* Titre */
+h1 {
+    color: #333;
+    font-size: 4vw;
+    font-family: arial;
+}
+
+/* Bouton stylisé */
+button {
+    background-color: #226D68;
+    color: white;
+    border: none;
+    padding: 1.2vw;
+    font-size: 1.4vw;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: verdana;
+
+
+}
+
+button:hover {
+    background-color: #18534F;
+}
+
+/* Affichage du défi */
+#defi {
+    font-size: 2vw;
+    margin-top: 7w;
+    padding: 2vw;
+    font-family: verdana;
+
+}
+.image_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0vh;
+  padding: 5%;
+
+}
+.gallery{
+  display: block;
+  column-count: 2;
+  column-gap: 10px;
+}
+
+.gallery img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (min-width: 200px){
+  .gallery{
+  column-count: 2; ;
+  }
+} 
+@media screen and (min-width: 500px){
+  .gallery{
+  column-count: 3; ;
+  }
+}
+@media screen and (min-width: 1000px){
+  .gallery{
+  column-count: 4; ;
+  }
+}
