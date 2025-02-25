@@ -22,3 +22,9 @@ def get_defi():
 
 if __name__ == "__main__":
     app.run(debug=True)  # Démarre le serveur Flask
+
+# cd chemin/vers/ton/projet  # Aller dans le dossier du projet
+# git status                 # Vérifier les changements
+# git add .                  # Ajouter tous les fichiers
+# git commit -m "Description des modifications"
+# git push origin main       # Envoyer sur GitHub
